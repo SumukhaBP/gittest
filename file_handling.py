@@ -50,18 +50,18 @@ import re
 
 # print(li_new)
 
-# def decorator(func):
-#     def multiplier(x):
-#         result = func(x)
-#         return result+2
-#     return multiplier
+def decorator(func):
+    def multiplier(x):
+        result = func(x)
+        return result+2
+    return multiplier
 
-# @decorator
-# def func(x):
-#     return x*x
+@decorator
+def func(x):
+    return x*x
 
-# print(func(2))
-# print(decorator(2))
-# var_x = set([1,2,3,4,5,6])
-# var_x.add(7)
-# print(var_x[3])
+print(func(2))
+print(decorator(2))
+var_x = set([1,2,3,4,5,6])
+var_x.add(7)
+print(var_x[3])
